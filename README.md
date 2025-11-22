@@ -1,10 +1,9 @@
 # Zorin OS 18 Pro Software Showcase
 
-**⚠️ DISCLAIMER: This is an unofficial project with no affiliation or relationship with Zorin Ltd., the Zorin OS development team, or any of the showcased software projects. This showcase was created independently for informational purposes only.**
-
-**Image Usage Notice: Image files (logos and screenshots) were collected from the web and their inclusion here is believed to be fair use. This project does not grant any licenses or permissions for the use of these images. Users should obtain proper licensing directly from the respective copyright holders if they wish to use these images for any purpose.**
-
 A web-based gallery showcasing the software applications that come preinstalled with Zorin OS 18 Pro (but not with Zorin OS 18 Core).
+
+**⚠️ DISCLAIMER:**
+This is an unofficial project with no affiliation or relationship with Zorin Ltd., the Zorin OS development team, or any of the showcased software projects. This showcase was created independently for informational purposes only. See also the **Image Usage Notice** at the bottom of this page.
 
 ## Overview
 
@@ -57,7 +56,7 @@ The webpage displays installation commands for each application. Most use either
 - ⚠️ Screenshots: Only Blender has a working screenshot currently (147KB JPEG)
 - ⚠️ Many screenshot URLs are outdated or return HTML error pages
 
-## Adding Screenshots
+## Screenshots
 
 To add screenshots for applications:
 1. Download screenshot images to the `screenshots/` directory
@@ -68,3 +67,6 @@ To add screenshots for applications:
 ## Source
 
 This showcase was created based on package list comparisons between Zorin OS 18 Core and Zorin OS 18 Pro installations.
+
+## Image Usage Notice
+Image files (logos and screenshots) were collected from the web and their inclusion here is believed to be fair use. This project does not grant any licenses or permissions for the use of these images. Users should obtain proper licensing directly from the respective copyright holders if they wish to use these images for any purpose.
