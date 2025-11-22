@@ -14,6 +14,10 @@ This is an interactive showcase webpage that displays 42 software applications o
 - **Other Tools** (8 apps): Warp, Gradia, EyeDropper, Blanket, Fragments, Upscaler, Drum Machine, Solanum, Network Displays
 - **System Tools** (2 apps): GNOME Maps, Graphviz
 
+## Preview
+
+![Zorin OS 18 Pro Software Showcase](screenshots/zorin-os-18-pro-showcase-screenshot.png)
+
 ## Features
 
 - **Expandable Cards**: Each application is displayed as a card that can be expanded to show detailed information
