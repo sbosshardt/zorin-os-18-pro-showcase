@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="generator" content="Hugo 0.152.2">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Page not found | darktable</title>
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/darktable.css">
+  <link rel="stylesheet" href="/css/cato.css">
+  <script src="/cato.js"></script>
+  <script async src="/tex-mml-chtml.js"></script>
+
+  
+
+<meta property="og:site_name" content="darktable" />
+<meta property="og:title" content="404 Page not found" />
+<meta property="og:description" content="darktable is an open source photography workflow application and raw developer" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.darktable.org/404.html" />
+<meta property="og:image" content="https://www.darktable.org/images/darktable-logo-only-512w.png" />
+
+<meta name="fediverse:creator" content="@darktable@photog.social">
+
+
+</head>
+<body>
+
+  <nav id="menu" class="home">
+  <ul>
+    
+      
+      <li><a href="/news/">news</a></li>
+      
+    
+      
+      <li><a href="/blog/">blog</a></li>
+      
+    
+      
+      <li><a href="/about/">about</a></li>
+      
+    
+      
+      <li><a href="/install/">install</a></li>
+      
+    
+      
+      <li><a href="/resources/">resources</a></li>
+      
+    
+      
+      <li><a href="/development/">development</a></li>
+      
+    
+      
+      <li><a href="/contact/">contact</a></li>
+      
+    
+      
+    
+      
+    
+    <li>
+      <form id="searchform" action="/search/">
+  <svg viewBox="0 0 16 16" height="16" width="16" style="vertical-align: middle;">
+    <g transform="translate(0 -1036.4)">
+      <ellipse style="color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#fff;stroke-width:2;fill:none;" rx="5.0368" ry="5.0368" cy="1042.4" cx="9.9632"></ellipse>
+      <path style="stroke:#fff;stroke-width:3;fill:none" d="m1.0607 1051.3 5.114-5.114"></path>
+    </g>
+  </svg>
+  <input type="text" class="searchbox" name="q" id="tipue_search_input" placeholder="search">
+</form>
+    </li>
+  </ul>
+</nav>
+
+<span id="logo">
+  <a href="/" title="darktable.org">
+    <img src="/images/darktable-logo-name-480w.png">
+  </a>
+</span>
+
+
+  
+  <h1>404</h1>
+
+
+  <section class='footer'>
+  <div class='container'>
+      <div class='row'>
+
+          <div class='six columns'>
+              <ul class='sitenav'>
+              <li><a href="/">darktable</a></li>
+              
+              
+                <li class="">
+                    <a href="/about/">
+                        
+                        <span>about</span>
+                    </a>
+                </li>
+              
+                <li class="">
+                    <a href="/resources/camera-support/">
+                        
+                        <span>camera support</span>
+                    </a>
+                </li>
+              
+                <li class="">
+                    <a href="/contact/">
+                        
+                        <span>contact</span>
+                    </a>
+                </li>
+              
+                <li class="">
+                    <a href="/credits/">
+                        
+                        <span>credits</span>
+                    </a>
+                </li>
+              
+                <li class="">
+                    <a href="/development/">
+                        
+                        <span>development</span>
+                    </a>
+                </li>
+              
+                <li class="">
+                    <a href="/about/faq/">
+                        
+                        <span>faq</span>
+                    </a>
+                </li>
+              
+                <li class="">
+                    <a href="/about/features/">
+                        
+                        <span>features</span>
+                    </a>
+                </li>
+              
+                <li class="">
+                    <a href="/install/">
+                        
+                        <span>install</span>
+                    </a>
+                </li>
+              
+                <li class="">
+                    <a href="/about/meta/">
+                        
+                        <span>meta</span>
+                    </a>
+                </li>
+              
+                <li class="">
+                    <a href="/resources/">
+                        
+                        <span>resources</span>
+                    </a>
+                </li>
+              
+                <li class="">
+                    <a href="/about/screenshots/">
+                        
+                        <span>screenshots</span>
+                    </a>
+                </li>
+              
+              </ul>
+          </div>
+
+          <div class='six columns smalltext'>
+              <p>
+                  <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="12" width="12" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 48 48.000001">
+                      <g transform="translate(0 -1004.4)">
+			  <circle style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" cx="6.4379" cy="1045.9" r="6.5" fill="#787878"/>
+			  <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="none" stroke="#787878" stroke-width="9" d="m-0.062104 1026.3a26.142 26.142 0 0 1 26.142 26.1"/>
+			  <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="none" stroke-opacity=".94118" stroke="#787878" stroke-width="10" d="m0.0010728 1009.3a43.026 43.026 0 0 1 43.026 43.1"/>
+                      </g>
+                  </svg>
+                  RSS Feeds:
+		  <a href="https://www.darktable.org/news/index.xml">News RSS</a>, <a href="https://www.darktable.org/blog/index.xml">Blog RSS</a>
+              </p>
+              <p>Connect with us on:<br>
+                <a rel="me" href="https://photog.social/@darktable">Mastodon</a>
+                &middot;
+                <a href='http://www.facebook.com/darktable' title='darktable on Facebook'>Facebook</a>
+                  &middot;
+                  <a href='http://www.flickr.com/groups/darktable/' title='darktable on Flickr'>Flickr</a>
+
+
+              </p>
+
+              <div class='badge'>
+                  <a class='badge-logo' target="_blank" rel="license" title='GPLv3.0' href="http://www.gnu.org/licenses/gpl-3.0.html">
+                      <img alt="GPLv3.0" src="/images/gplv3-88x31.png">
+                  </a>
+                  <div class='badge-text'>
+                      darktable is released under the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3.0</a><br>
+                      <a href="/">&copy;2025 by the darktable team.</a> »
+                      <a href="/credits/">credits</a>
+                  </div>
+              </div>
+
+              <div class='badge clearfix'>
+                  <a class='badge-logo' target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+                      <img alt="Creative Commons License" src="/images/CCBYSANC_88x31.png">
+                  </a>
+                  <div class='badge-text'>
+                      Unless otherwise stated, this website and images are licensed <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons BY-NC-SA 3.0 License</a>.
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+      <div class='row pixlslove'>
+          <div class='four columns offset-by-four'>
+          <p><a href="https://pixls.us">pixls.us</a> <span class='heart'>♡</span>'s darktable</p>
+          </div>
+      </div>
+
+  </div>
+</section>
+<script>
+MathJax = {
+    tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+};
+</script>
+
+
+
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
+
+</body>
+</html>
+
+

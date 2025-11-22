@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorin OS 18 Pro - Software Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .category {
+            margin-bottom: 3rem;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #444;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .card-header {
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .card-logo {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background: #f0f0f0;
+        }
+
+        .card-info {
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: #333;
+        }
+
+        .card-tagline {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .card-expand-icon {
+            font-size: 1.5rem;
+            color: #999;
+            transition: transform 0.3s ease;
+        }
+
+        .card.expanded .card-expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .card-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .card.expanded .card-content {
+            max-height: 5000px;
+        }
+
+        .card-details {
+            padding: 1.5rem;
+            border-top: 1px solid #eee;
+        }
+
+        .description {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 1.5rem 0;
+        }
+
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .screenshot {
+            border-radius: 8px;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .detail-section {
+            margin: 1.5rem 0;
+        }
+
+        .detail-section h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+
+        .homepage-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .homepage-link:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .install-command {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            position: relative;
+            overflow-x: auto;
+            margin-top: 0.5rem;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: background 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: #764ba2;
+        }
+
+        .copy-btn.copied {
+            background: #10b981;
+        }
+
+        .placeholder {
+            background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            height: 150px;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .screenshots {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Zorin OS 18 Pro</h1>
+        <p>Professional Software Showcase</p>
+        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem; font-style: italic;">⚠️ Unofficial project - No affiliation with Zorin Ltd. or the Zorin OS team</p>
+    </div>
+
+    <div class="container">
+        <!-- Creative & Design -->
+        <div class="category">
+            <h2 class="category-title">Creative & Design</h2>
+            <div class="grid" id="creative-grid"></div>
+        </div>
+
+        <!-- Video & Audio -->
+        <div class="category">
+            <h2 class="category-title">Video & Audio</h2>
+            <div class="grid" id="video-audio-grid"></div>
+        </div>
+
+        <!-- Productivity & Utilities -->
+        <div class="category">
+            <h2 class="category-title">Productivity & Utilities</h2>
+            <div class="grid" id="productivity-grid"></div>
+        </div>
+
+        <!-- Other Tools -->
+        <div class="category">
+            <h2 class="category-title">Other Tools</h2>
+            <div class="grid" id="other-grid"></div>
+        </div>
+
+        <!-- System Tools -->
+        <div class="category">
+            <h2 class="category-title">System Tools</h2>
+            <div class="grid" id="system-grid"></div>
+        </div>
+    </div>
+
+    <script>
+        const software = {
+            creative: [
+                {
+                    title: "GIMP",
+                    tagline: "GNU Image Manipulation Program",
+                    description: "GIMP is a free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks. It features a comprehensive set of tools comparable to commercial image editors, making it suitable for professional photo editing, graphic design, and digital art creation.",
+                    logo: "logos/gimp.svg",
+                    screenshots: [],
+                    homepage: "https://www.gimp.org/",
+                    install: "sudo apt install gimp"
+                },
+                {
+                    title: "Blender",
+                    tagline: "3D creation, animation, and rendering",
+                    description: "Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and video games. It features a comprehensive set of tools for modeling, sculpting, texturing, rigging, animation, rendering, compositing, and motion tracking.",
+                    logo: "logos/blender.png",
+                    screenshots: [
+                        "screenshots/blender-1.jpg"
+                    ],
+                    homepage: "https://www.blender.org/",
+                    install: "flatpak install flathub org.blender.Blender"
+                },
+                {
+                    title: "Darktable",
+                    tagline: "Photography workflow application",
+                    description: "Darktable is an open-source photography workflow application and raw developer. It provides a non-destructive editing workflow for photographers, allowing you to manage your digital negatives in a database and develop them with a powerful set of tools. It features advanced color correction, exposure adjustments, noise reduction, and lens correction capabilities.",
+                    logo: "logos/darktable.png",
+                    screenshots: [
+                        "screenshots/darktable-1.jpg"
+                    ],
+                    homepage: "https://www.darktable.org/",
+                    install: "flatpak install flathub org.darktable.Darktable"
+                },
+                {
+                    title: "Krita",
+                    tagline: "Digital painting and illustration",
+                    description: "Krita is a professional free and open-source painting program made by artists for artists. It's designed for concept art, texture and matte painters, illustrations, and comics. Krita features an intuitive interface, customizable brush engines, advanced layer management, and support for various file formats including PSD, making it a powerful alternative to commercial digital painting software.",
+                    logo: "logos/krita.png",
+                    screenshots: [
+                        "screenshots/krita-1.jpg"
+                    ],
+                    homepage: "https://krita.org/",
+                    install: "flatpak install flathub org.kde.krita"
+                },
+                {
+                    title: "Inkscape",
+                    tagline: "Vector graphics editor",
+                    description: "Inkscape is a professional vector graphics editor for Windows, Mac OS X, and Linux. It's used by design professionals worldwide to create illustrations, icons, logos, diagrams, maps, and web graphics. Inkscape uses the W3C standard SVG file format and features powerful drawing tools, text support, and the ability to work with multiple file formats.",
+                    logo: "logos/inkscape.png",
+                    screenshots: [
+                        "screenshots/inkscape-1.png"
+                    ],
+                    homepage: "https://inkscape.org/",
+                    install: "flatpak install flathub org.inkscape.Inkscape"
+                },
+                {
+                    title: "LibreCAD",
+                    tagline: "2D CAD application",
+                    description: "LibreCAD is a free, open-source 2D CAD application for Windows, Apple, and Linux. It's based on Qt, which is a leading cross-platform application and UI development framework. LibreCAD is suitable for creating technical drawings, floor plans, schematics, and other 2D designs. It reads DWG files and can export to various formats.",
+                    logo: "logos/librecad.svg",
+                    screenshots: [],
+                    homepage: "https://librecad.org/",
+                    install: "sudo apt install librecad"
+                },
+                {
+                    title: "Shotwell",
+                    tagline: "Photo organizer and editor",
+                    description: "Shotwell is a digital photo organizer designed for the GNOME desktop environment. It allows you to import photos from disk or camera, organize them in various ways, view them in full-window or fullscreen mode, and edit them. Shotwell features automatic photo organization, non-destructive editing, and integration with online photo sharing services.",
+                    logo: "logos/shotwell.svg",
+                    screenshots: [],
+                    homepage: "https://wiki.gnome.org/Apps/Shotwell",
+                    install: "sudo apt install shotwell"
+                },
+                {
+                    title: "Scribus",
+                    tagline: "Desktop publishing and page layout",
+                    description: "Scribus is an open-source desktop publishing application that brings professional page layout to Linux, macOS, and Windows desktops. It's designed for creating magazines, brochures, newsletters, posters, and other professional documents. Scribus features advanced typography, color management, PDF creation, and support for professional printing standards.",
+                    logo: "logos/scribus.svg",
+                    screenshots: [],
+                    homepage: "https://www.scribus.net/",
+                    install: "flatpak install flathub net.scribus.Scribus"
+                },
+                {
+                    title: "OpenToonz",
+                    tagline: "2D animation software",
+                    description: "OpenToonz is a 2D animation software program. It's used by professional animators worldwide and has been used in the production of many animated films and TV shows. OpenToonz features traditional animation tools, digital drawing capabilities, effects, compositing, and the ability to create both traditional and digital animation workflows.",
+                    logo: "logos/opentoonz.png",
+                    screenshots: [],
+                    homepage: "https://opentoonz.github.io/e/",
+                    install: "flatpak install flathub io.github.OpenToonz"
+                },
+                {
+                    title: "FreeCAD",
+                    tagline: "3D parametric modeler",
+                    description: "FreeCAD is a general-purpose parametric 3D CAD modeler and a building information modeling software with finite element method support. It's designed for mechanical engineering, product design, architecture, and other engineering disciplines. FreeCAD features parametric modeling, allowing you to modify your design by going back into your model history and changing parameters.",
+                    logo: "logos/freecad.svg",
+                    screenshots: [],
+                    homepage: "https://www.freecad.org/",
+                    install: "flatpak install flathub org.freecad.FreeCAD"
+                }
+            ],
+            videoAudio: [
+                {
+                    title: "OBS Studio",
+                    tagline: "Live streaming and screen recording",
+                    description: "OBS Studio is free and open-source software for video recording and live streaming. It's widely used by content creators, gamers, and professionals for streaming to platforms like Twitch, YouTube, and Facebook Live. OBS Studio features real-time video and audio capturing, scene composition, encoding, recording, and broadcasting with support for multiple sources and scenes.",
+                    logo: "logos/obs-studio.svg",
+                    screenshots: [],
+                    homepage: "https://obsproject.com/",
+                    install: "flatpak install flathub com.obsproject.Studio"
+                },
+                {
+                    title: "Kdenlive",
+                    tagline: "Non-linear video editor",
+                    description: "Kdenlive is a powerful multi-track video editor, available for Linux, Windows, and macOS. It's based on the MLT Framework and KDE. Kdenlive supports a wide range of formats and codecs, features a user-friendly interface, and includes advanced editing tools like multi-track editing, color correction, audio mixing, and a variety of effects and transitions.",
+                    logo: "logos/kdenlive.png",
+                    screenshots: [],
+                    homepage: "https://kdenlive.org/",
+                    install: "flatpak install flathub org.kde.kdenlive"
+                },
+                {
+                    title: "HandBrake",
+                    tagline: "Video transcoder",
+                    description: "HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs. It's designed to be fast, efficient, and easy to use. HandBrake can process most common multimedia files and any DVD or BluRay sources that don't contain copy protection. It features batch processing, preset configurations, and advanced encoding options.",
+                    logo: "logos/handbrake.svg",
+                    screenshots: [],
+                    homepage: "https://handbrake.fr/",
+                    install: "flatpak install flathub fr.handbrake.ghb"
+                },
+                {
+                    title: "Audacity",
+                    tagline: "Audio editor and recorder",
+                    description: "Audacity is a free, open-source, cross-platform audio software for multi-track recording and editing. It's used by musicians, podcasters, and audio professionals worldwide. Audacity features a simple interface, support for many audio formats, real-time effects, noise reduction, and the ability to record live audio, digitize recordings from other media, and edit various sound files.",
+                    logo: "logos/audacity.svg",
+                    screenshots: [],
+                    homepage: "https://www.audacityteam.org/",
+                    install: "flatpak install flathub org.audacityteam.Audacity"
+                },
+                {
+                    title: "Ardour",
+                    tagline: "Digital audio workstation",
+                    description: "Ardour is a professional digital audio workstation (DAW) for Linux, macOS, and Windows. It's designed for recording, editing, and mixing audio and MIDI. Ardour features unlimited audio and MIDI tracks, non-destructive editing, professional mixing capabilities, and support for a wide range of plugins. It's used by professional musicians, sound engineers, and audio post-production facilities.",
+                    logo: "logos/ardour.svg",
+                    screenshots: [],
+                    homepage: "https://ardour.org/",
+                    install: "flatpak install flathub org.ardour.Ardour"
+                },
+                {
+                    title: "Mixxx",
+                    tagline: "DJ mixing software",
+                    description: "Mixxx is free DJ software that gives you everything you need to perform live DJ mixes. It's designed for both beginner and professional DJs. Mixxx features beat matching, automatic BPM detection, effects, looping, hotcues, and support for various DJ controllers. It can be used with vinyl turntables, CD players, or entirely digital setups.",
+                    logo: "logos/mixxx.svg",
+                    screenshots: [],
+                    homepage: "https://www.mixxx.org/",
+                    install: "flatpak install flathub org.mixxx.Mixxx"
+                },
+                {
+                    title: "Easy Effects",
+                    tagline: "Audio effects processor",
+                    description: "Easy Effects (formerly PulseEffects) is an audio effects application for PipeWire and PulseAudio systems. It provides a wide range of audio effects including equalizers, compressors, reverbs, and more. Easy Effects features a user-friendly interface, preset management, and the ability to apply effects system-wide or to specific applications.",
+                    logo: "logos/easy-effects.svg",
+                    screenshots: [],
+                    homepage: "https://github.com/wwmm/easyeffects",
+                    install: "flatpak install flathub com.github.wwmm.easyeffects"
+                },
+                {
+                    title: "VLC",
+                    tagline: "Media player",
+                    description: "VLC media player is a free and open-source, portable, cross-platform media player and streaming media server. It plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols. VLC is known for its ability to play almost any media format without the need for additional codecs, making it one of the most versatile media players available.",
+                    logo: "logos/vlc.svg",
+                    screenshots: [],
+                    homepage: "https://www.videolan.org/vlc/",
+                    install: "flatpak install flathub org.videolan.VLC"
+                },
+                {
+                    title: "Clapper",
+                    tagline: "Simple media player",
+                    description: "Clapper is a simple, modern media player for the GNOME desktop environment. It features a clean, minimal interface focused on video playback. Clapper supports various video formats and provides a distraction-free viewing experience with keyboard shortcuts and a simple control interface.",
+                    logo: "logos/clapper.svg",
+                    screenshots: [],
+                    homepage: "https://github.com/rafostar/clapper",
+                    install: "flatpak install flathub com.github.rafostar.Clapper"
+                },
+                {
+                    title: "Valot",
+                    tagline: "Video player",
+                    description: "Valot is a modern video player application designed for the GNOME desktop. It provides a simple and intuitive interface for playing video files with support for various formats. Valot focuses on ease of use and a clean user experience.",
+                    logo: "logos/valot.svg",
+                    screenshots: [],
+                    homepage: "https://github.com/odnoklassniki/valot",
+                    install: "flatpak install flathub com.odnoyko.valot"
+                }
+            ],
+            productivity: [
+                {
+                    title: "Logseq",
+                    tagline: "Privacy-first knowledge base",
+                    description: "Logseq is a privacy-first, open-source platform for knowledge management and collaboration. It's a local-first, non-linear, outliner notebook for organizing and sharing your personal knowledge base. Logseq uses markdown and org-mode for formatting and supports bidirectional linking, block references, and powerful query capabilities.",
+                    logo: "logos/logseq.png",
+                    screenshots: [],
+                    homepage: "https://logseq.com/",
+                    install: "flatpak install flathub com.logseq.Logseq"
+                },
+                {
+                    title: "Foliate",
+                    tagline: "E-book reader",
+                    description: "Foliate is a simple and modern e-book reader for Linux. It supports many e-book formats including EPUB, MOBI, PDF, and more. Foliate features a clean, book-like interface with customizable fonts, themes, and reading modes. It includes features like bookmarks, annotations, text highlighting, and dictionary lookup.",
+                    logo: "logos/foliate.svg",
+                    screenshots: [],
+                    homepage: "https://johnfactotum.github.io/foliate/",
+                    install: "flatpak install flathub com.github.johnfactotum.Foliate"
+                },
+                {
+                    title: "Minder",
+                    tagline: "Mind mapping tool",
+                    description: "Minder is a mind-mapping tool designed for the GNOME desktop. It helps you create, visualize, and organize your thoughts and ideas in a hierarchical structure. Minder features a simple interface, keyboard shortcuts, and the ability to export your mind maps to various formats. It's useful for brainstorming, project planning, and organizing complex information.",
+                    logo: "logos/minder.svg",
+                    screenshots: [],
+                    homepage: "https://github.com/phase1geo/Minder",
+                    install: "flatpak install flathub com.github.phase1geo.minder"
+                },
+                {
+                    title: "Xournal++",
+                    tagline: "Note-taking and PDF annotation",
+                    description: "Xournal++ is a handwriting note-taking application written in C++ with a focus on flexibility and functionality. It's particularly useful for annotating PDFs, taking handwritten notes, and creating sketches. Xournal++ features pressure-sensitive stylus support, shape recognition, LaTeX support, and the ability to export to various formats including PDF.",
+                    logo: "logos/xournalpp.png",
+                    screenshots: [],
+                    homepage: "https://xournalpp.github.io/",
+                    install: "flatpak install flathub com.github.xournalpp.xournalpp"
+                },
+                {
+                    title: "Homebank",
+                    tagline: "Personal finance manager",
+                    description: "Homebank is a free personal accounting software that helps you manage your personal finances. It allows you to track your income and expenses, create budgets, generate reports, and analyze your spending patterns. Homebank features an intuitive interface, support for multiple accounts, transaction categories, and the ability to import data from various banking formats.",
+                    logo: "logos/homebank.svg",
+                    screenshots: [],
+                    homepage: "https://homebank.free.fr/",
+                    install: "flatpak install flathub fr.free.Homebank"
+                },
+                {
+                    title: "Planify",
+                    tagline: "Task management and productivity",
+                    description: "Planify is a task management application designed to help you organize your work and personal projects. It features a clean interface for creating tasks, setting due dates, organizing projects, and tracking your productivity. Planify helps you stay organized and focused on what matters most.",
+                    logo: "logos/planify.png",
+                    screenshots: [],
+                    homepage: "https://github.com/alainm23/planify",
+                    install: "flatpak install flathub io.github.alainm23.planify"
+                },
+                {
+                    title: "NewsFlash",
+                    tagline: "RSS feed reader",
+                    description: "NewsFlash is a modern RSS feed reader for the GNOME desktop. It provides a clean interface for reading news articles from your favorite websites and blogs. NewsFlash features article caching, offline reading, keyboard shortcuts, and integration with online services. It helps you stay informed by aggregating content from multiple sources in one place.",
+                    logo: "logos/newsflash.svg",
+                    screenshots: [],
+                    homepage: "https://gitlab.com/news-flash/news_flash",
+                    install: "flatpak install flathub io.gitlab.news_flash.NewsFlash"
+                },
+                {
+                    title: "Apostrophe",
+                    tagline: "Markdown editor",
+                    description: "Apostrophe is a distraction-free markdown editor for the GNOME desktop. It provides a clean, focused writing environment with live preview, syntax highlighting, and support for mathematical expressions. Apostrophe is designed for writers who want a simple, elegant tool for creating documents in markdown format.",
+                    logo: "logos/apostrophe.svg",
+                    screenshots: [],
+                    homepage: "https://gitlab.gnome.org/somas/apostrophe",
+                    install: "flatpak install flathub org.gnome.gitlab.somas.Apostrophe"
+                },
+                {
+                    title: "Deskflow",
+                    tagline: "Workflow automation",
+                    description: "Deskflow is a workflow automation tool that helps you streamline repetitive tasks and improve productivity. It allows you to create custom workflows and automate various desktop operations, making your daily computing tasks more efficient.",
+                    logo: "logos/deskflow.png",
+                    screenshots: [],
+                    homepage: "https://github.com/deskflow/deskflow",
+                    install: "flatpak install flathub org.deskflow.deskflow"
+                }
+            ],
+            other: [
+                {
+                    title: "Warp",
+                    tagline: "Modern terminal",
+                    description: "Warp is a modern, Rust-based terminal application designed to make your command-line experience more productive and enjoyable. It features a clean interface, intelligent autocomplete, command palette, and various customization options. Warp aims to bring modern UI/UX principles to terminal applications.",
+                    logo: "logos/warp.png",
+                    screenshots: [],
+                    homepage: "https://www.warp.dev/",
+                    install: "flatpak install flathub app.drey.Warp"
+                },
+                {
+                    title: "Gradia",
+                    tagline: "Gradient generator",
+                    description: "Gradia is a simple tool for creating beautiful gradients. It provides an intuitive interface for designing color gradients that can be used in design projects, websites, or applications. Gradia helps you create professional-looking gradients with ease.",
+                    logo: "logos/gradia.svg",
+                    screenshots: [],
+                    homepage: "https://github.com/alexandervanhee/gradia",
+                    install: "flatpak install flathub be.alexandervanhee.gradia"
+                },
+                {
+                    title: "EyeDropper",
+                    tagline: "Color picker",
+                    description: "EyeDropper is a color picker application that allows you to select colors from anywhere on your screen. It's useful for designers, developers, and anyone who needs to identify or extract colors from images, websites, or applications. EyeDropper provides color codes in various formats including HEX, RGB, and HSL.",
+                    logo: "logos/eyedropper.svg",
+                    screenshots: [],
+                    homepage: "https://github.com/finefindus/eyedropper",
+                    install: "flatpak install flathub com.github.finefindus.eyedropper"
+                },
+                {
+                    title: "Blanket",
+                    tagline: "Ambient sounds",
+                    description: "Blanket is an application that plays ambient sounds to help you focus, relax, or sleep. It provides a collection of high-quality ambient sounds including rain, ocean waves, forest sounds, and white noise. Blanket helps create a calming atmosphere for work, study, or rest.",
+                    logo: "logos/blanket.svg",
+                    screenshots: [],
+                    homepage: "https://github.com/rafaelmardojai/blanket",
+                    install: "flatpak install flathub com.rafaelmardojai.Blanket"
+                },
+                {
+                    title: "Fragments",
+                    tagline: "BitTorrent client",
+                    description: "Fragments is a modern BitTorrent client for the GNOME desktop. It provides a simple and intuitive interface for downloading files using the BitTorrent protocol. Fragments features a clean design, download management, and integration with the GNOME desktop environment.",
+                    logo: "logos/fragments.svg",
+                    screenshots: [],
+                    homepage: "https://github.com/FragmentsApp/fragments",
+                    install: "flatpak install flathub de.haeckerfelix.Fragments"
+                },
+                {
+                    title: "Upscaler",
+                    tagline: "Image upscaling tool",
+                    description: "Upscaler is a tool for enhancing and upscaling images using advanced algorithms. It helps improve image quality and resolution, making it useful for photographers, designers, and anyone who needs to enhance low-resolution images. Upscaler uses machine learning techniques to produce high-quality results.",
+                    logo: "logos/upscaler.svg",
+                    screenshots: [],
+                    homepage: "https://gitlab.com/theevilskeleton/upscaler",
+                    install: "flatpak install flathub io.gitlab.theevilskeleton.Upscaler"
+                },
+                {
+                    title: "Drum Machine",
+                    tagline: "Music creation tool",
+                    description: "Drum Machine is a digital drum machine application that allows you to create beats and rhythms. It features a grid-based interface for programming drum patterns, various drum sounds, and the ability to create and save your own beats. Drum Machine is useful for musicians, producers, and anyone interested in creating electronic music.",
+                    logo: "logos/drum-machine.png",
+                    screenshots: [],
+                    homepage: "https://github.com/revisto/drum-machine",
+                    install: "flatpak install flathub io.github.revisto.drum-machine"
+                },
+                {
+                    title: "Solanum",
+                    tagline: "Pomodoro timer",
+                    description: "Solanum is a Pomodoro Technique timer application for the GNOME desktop. The Pomodoro Technique is a time management method that uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks. Solanum helps you stay focused and productive by managing these work and break intervals.",
+                    logo: "logos/solanum.png",
+                    screenshots: [],
+                    homepage: "https://gitlab.gnome.org/World/Solanum",
+                    install: "flatpak install flathub org.gnome.Solanum"
+                },
+                {
+                    title: "Network Displays",
+                    tagline: "Screen sharing",
+                    description: "Network Displays is a GNOME application that allows you to share your screen over a network. It enables wireless screen mirroring and sharing, making it easy to display your desktop on other devices or projectors without cables. Network Displays supports various protocols and provides a simple interface for screen sharing.",
+                    logo: "logos/network-displays.png",
+                    screenshots: [],
+                    homepage: "https://gitlab.gnome.org/GNOME/gnome-network-displays",
+                    install: "flatpak install flathub org.gnome.NetworkDisplays"
+                }
+            ],
+            system: [
+                {
+                    title: "GNOME Maps",
+                    tagline: "Maps application",
+                    description: "GNOME Maps is a map application for the GNOME desktop environment. It provides an easy way to browse maps, search for locations, get directions, and view satellite imagery. GNOME Maps uses OpenStreetMap data and features a clean, simple interface integrated with the GNOME desktop.",
+                    logo: "logos/gnome-maps.svg",
+                    screenshots: [],
+                    homepage: "https://wiki.gnome.org/Apps/Maps",
+                    install: "sudo apt install gnome-maps"
+                },
+                {
+                    title: "Graphviz",
+                    tagline: "Graph visualization software",
+                    description: "Graphviz is open-source graph visualization software. It takes descriptions of graphs in a simple text language and makes diagrams in useful formats, such as images and SVG for web pages, PDF or Postscript for inclusion in other documents, or display in an interactive graph browser. Graphviz is useful for visualizing complex relationships, network diagrams, and hierarchical structures.",
+                    logo: "logos/graphviz.svg",
+                    screenshots: [],
+                    homepage: "https://graphviz.org/",
+                    install: "sudo apt install graphviz"
+                }
+            ]
+        };
+
+        function createCard(app) {
+            const card = document.createElement('div');
+            card.className = 'card';
+            
+            const header = document.createElement('div');
+            header.className = 'card-header';
+            
+            const logo = document.createElement('img');
+            logo.className = 'card-logo';
+            logo.src = app.logo || 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><rect width="64" height="64" fill="%23e0e0e0"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="%23999" font-size="24">📦</text></svg>';
+            logo.alt = app.title;
+            logo.onerror = function() {
+                this.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><rect width="64" height="64" fill="%23e0e0e0"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="%23999" font-size="24">📦</text></svg>';
+            };
+            
+            const info = document.createElement('div');
+            info.className = 'card-info';
+            
+            const title = document.createElement('div');
+            title.className = 'card-title';
+            title.textContent = app.title;
+            
+            const tagline = document.createElement('div');
+            tagline.className = 'card-tagline';
+            tagline.textContent = app.tagline;
+            
+            const expandIcon = document.createElement('div');
+            expandIcon.className = 'card-expand-icon';
+            expandIcon.textContent = '▼';
+            
+            info.appendChild(title);
+            info.appendChild(tagline);
+            header.appendChild(logo);
+            header.appendChild(info);
+            header.appendChild(expandIcon);
+            
+            const content = document.createElement('div');
+            content.className = 'card-content';
+            
+            const details = document.createElement('div');
+            details.className = 'card-details';
+            
+            if (app.description) {
+                const description = document.createElement('p');
+                description.className = 'description';
+                description.textContent = app.description;
+                details.appendChild(description);
+            }
+            
+            if (app.screenshots && app.screenshots.length > 0) {
+                const screenshotsDiv = document.createElement('div');
+                screenshotsDiv.className = 'screenshots';
+                
+                app.screenshots.forEach(screenshot => {
+                    const img = document.createElement('img');
+                    img.className = 'screenshot';
+                    img.src = screenshot;
+                    img.alt = `${app.title} screenshot`;
+                    img.onerror = function() {
+                        this.style.display = 'none';
+                    };
+                    screenshotsDiv.appendChild(img);
+                });
+                
+                details.appendChild(screenshotsDiv);
+            } else {
+                const screenshotsDiv = document.createElement('div');
+                screenshotsDiv.className = 'screenshots';
+                const placeholder = document.createElement('div');
+                placeholder.className = 'screenshot placeholder';
+                placeholder.textContent = '📷 Screenshot';
+                screenshotsDiv.appendChild(placeholder);
+                details.appendChild(screenshotsDiv);
+            }
+            
+            if (app.homepage) {
+                const homepageSection = document.createElement('div');
+                homepageSection.className = 'detail-section';
+                const homepageLabel = document.createElement('h3');
+                homepageLabel.textContent = 'Homepage:';
+                const homepageLink = document.createElement('a');
+                homepageLink.className = 'homepage-link';
+                homepageLink.href = app.homepage;
+                homepageLink.target = '_blank';
+                homepageLink.textContent = app.homepage;
+                homepageSection.appendChild(homepageLabel);
+                homepageSection.appendChild(homepageLink);
+                details.appendChild(homepageSection);
+            }
+            
+            if (app.install) {
+                const installSection = document.createElement('div');
+                installSection.className = 'detail-section';
+                const installLabel = document.createElement('h3');
+                installLabel.textContent = 'Install Command:';
+                const installDiv = document.createElement('div');
+                installDiv.className = 'install-command';
+                const installCode = document.createElement('code');
+                installCode.textContent = app.install;
+                const copyBtn = document.createElement('button');
+                copyBtn.className = 'copy-btn';
+                copyBtn.textContent = 'Copy';
+                copyBtn.onclick = function() {
+                    navigator.clipboard.writeText(app.install).then(() => {
+                        copyBtn.textContent = 'Copied!';
+                        copyBtn.classList.add('copied');
+                        setTimeout(() => {
+                            copyBtn.textContent = 'Copy';
+                            copyBtn.classList.remove('copied');
+                        }, 2000);
+                    });
+                };
+                installDiv.appendChild(installCode);
+                installDiv.appendChild(copyBtn);
+                installSection.appendChild(installLabel);
+                installSection.appendChild(installDiv);
+                details.appendChild(installSection);
+            }
+            
+            content.appendChild(details);
+            
+            card.appendChild(header);
+            card.appendChild(content);
+            
+            header.onclick = function() {
+                card.classList.toggle('expanded');
+            };
+            
+            return card;
+        }
+
+        function renderCategory(categoryId, apps) {
+            const container = document.getElementById(categoryId);
+            apps.forEach(app => {
+                const card = createCard(app);
+                container.appendChild(card);
+            });
+        }
+
+        // Render all categories
+        renderCategory('creative-grid', software.creative);
+        renderCategory('video-audio-grid', software.videoAudio);
+        renderCategory('productivity-grid', software.productivity);
+        renderCategory('other-grid', software.other);
+        renderCategory('system-grid', software.system);
+    </script>
+</body>
+</html>

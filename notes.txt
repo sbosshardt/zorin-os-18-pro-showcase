@@ -1,0 +1,158 @@
+ZORIN OS 18 PRO SHOWCASE - DEVELOPMENT NOTES
+=============================================
+
+IMPORTANT DISCLAIMER
+---------------------
+This is an UNOFFICIAL project with NO AFFILIATION or relationship with 
+Zorin Ltd. or the Zorin OS development team. This showcase was created 
+independently for informational purposes only.
+
+PROJECT OVERVIEW
+----------------
+Created a web-based gallery showcasing 42 software applications that come 
+preinstalled with Zorin OS 18 Pro (but not Core). The webpage displays 
+applications in expandable cards with logos, descriptions, screenshots, 
+homepage links, and install commands.
+
+WHAT'S BEEN COMPLETED
+---------------------
+
+1. HTML STRUCTURE
+   - Created index.html with embedded CSS and JavaScript
+   - Implemented expandable card UI with smooth transitions
+   - Added category filtering functionality
+   - Responsive design for different screen sizes
+
+2. APPLICATION DATA
+   - Added all 42 applications organized into 5 categories:
+     * Creative & Design (10 apps)
+     * Video & Audio (10 apps)
+     * Productivity (9 apps)
+     * Other Tools (8 apps)
+     * System Tools (2 apps)
+   - Each application has:
+     * Title and tagline
+     * Description paragraph
+     * Homepage URL
+     * Install command (apt or flatpak)
+
+3. LOGOS
+   - Created logos/ subdirectory
+   - Downloaded logos for all 42 applications
+   - Sources used:
+     * Wikimedia Commons
+     * GitHub/GitLab raw files
+     * Official project websites
+     * Flathub icons
+   - Logos are stored locally as PNG or SVG files
+   - All logo paths in HTML updated to use local files (logos/*)
+
+4. SCREENSHOTS
+   - Created screenshots/ subdirectory
+   - CURRENT STATUS: Only Blender screenshot successfully downloaded
+     * blender-1.jpg: 147KB JPEG (1280x720) - WORKING
+   - Attempted sources (most failed):
+     * Official project websites (many URLs 404 or return HTML)
+     * Wikimedia Commons (access/redirect issues)
+     * Flathub (URL structure unclear)
+     * GitHub repositories (screenshots not in expected locations)
+
+5. HTML UPDATES
+   - All logo paths updated to use local files
+   - Screenshot paths updated where available
+   - Blender screenshot path configured correctly
+
+KNOWN ISSUES / TODO
+-------------------
+
+1. SCREENSHOTS
+   - Only 1 out of 42 applications has a working screenshot (Blender)
+   - Many screenshot URLs are outdated or return HTML error pages
+   - Need to find reliable sources for screenshots:
+     * Check Flathub app pages directly for screenshot URLs
+     * Search GitHub releases/assets for screenshots
+     * Check official project documentation sites
+     * Consider using Flathub API if available
+     * Try alternative image hosting services
+
+2. SCREENSHOT NAMING
+   - Current pattern: <app-name>-1.png or <app-name>-1.jpg
+   - Some apps might need multiple screenshots
+   - Need to verify file extensions match actual file types
+
+3. LOGO VERIFICATION
+   - Some logos downloaded as 14-byte files (likely failed downloads)
+   - Should verify all logos are valid image files
+   - May need to retry failed logo downloads
+
+TECHNICAL DETAILS
+-----------------
+
+- File: index.html (standalone HTML with embedded CSS/JS)
+- Logos directory: logos/ (PNG and SVG files)
+- Screenshots directory: screenshots/ (PNG and JPG files)
+- No build process required - just open index.html in browser
+- Uses vanilla JavaScript (no frameworks)
+- CSS transitions for expand/collapse animations
+- Clipboard API for copy-to-clipboard functionality
+
+ATTEMPTED SCREENSHOT SOURCES
+-----------------------------
+
+1. Official Websites:
+   - GIMP: www.gimp.org (URLs returned HTML)
+   - Blender: www.blender.org (SUCCESS - found working URL)
+   - Darktable: www.darktable.org (404 errors)
+   - Krita: krita.org (no images found in HTML)
+   - Inkscape: inkscape.org (URLs returned HTML)
+
+2. Wikimedia Commons:
+   - Tried direct file URLs
+   - Tried Special:FilePath URLs
+   - Most attempts returned HTML error pages
+
+3. Flathub:
+   - Tried screenshot URL patterns
+   - Tried CDN URLs
+   - URL structure unclear, most returned 162-byte HTML files
+
+4. GitHub:
+   - Checked README files
+   - Checked .github directories
+   - Checked releases pages
+   - Most didn't contain screenshot URLs
+
+NEXT STEPS FOR HANDOFF
+----------------------
+
+1. Continue searching for screenshot sources:
+   - Check Flathub app pages in browser to find actual screenshot URLs
+   - Search GitHub/GitLab for screenshot files in repos
+   - Check official project documentation
+   - Try alternative image hosting services
+
+2. Verify logo files:
+   - Check file sizes (remove any 14-byte failed downloads)
+   - Verify all logos are valid images
+   - Retry any failed logo downloads
+
+3. Update HTML:
+   - Add screenshot paths as they're found
+   - Ensure file extensions match actual file types
+   - Test that all images load correctly
+
+4. Testing:
+   - Open index.html in browser
+   - Verify all logos display
+   - Verify screenshots display (when added)
+   - Test expand/collapse functionality
+   - Test category filtering
+   - Test copy-to-clipboard for install commands
+
+FILES CREATED
+-------------
+- index.html (main webpage)
+- logos/ (directory with 45+ logo files)
+- screenshots/ (directory with 1 working screenshot)
+- README.md (project documentation)
+- notes.txt (this file)

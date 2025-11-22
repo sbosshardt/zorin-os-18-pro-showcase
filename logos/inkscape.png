@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Page Not Found | Inkscape</title>
+    <meta charset="utf-8"/>
+
+    <link rel="shortcut icon" href="https://media.inkscape.org/static/images/inkscape-favicon.png"/>
+
+    
+
+    
+      <link rel="stylesheet" type="text/css" href="https://media.inkscape.org/static/css/main.css"/>
+      <link rel="stylesheet" type="text/css" href="https://media.inkscape.org/static/css/text.css"/>
+      <link rel="stylesheet" type="text/css" href="https://media.inkscape.org/static/css/gallery.css"/>
+      <link rel="stylesheet" type="text/css" href="https://media.inkscape.org/static/css/ink.css"/>
+    
+
+    
+      <link rel="alternate" hreflang="en" href="https://inkscape.org/en/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="de" href="https://inkscape.org/de/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="fr" href="https://inkscape.org/fr/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="hr" href="https://inkscape.org/hr/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="it" href="https://inkscape.org/it/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="es" href="https://inkscape.org/es/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="pt" href="https://inkscape.org/pt/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="pt-br" href="https://inkscape.org/pt-br/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="cs" href="https://inkscape.org/cs/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="ru" href="https://inkscape.org/ru/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="ar" href="https://inkscape.org/ar/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="ja" href="https://inkscape.org/ja/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="zh-hans" href="https://inkscape.org/zh-hans/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="zh-hant" href="https://inkscape.org/zh-hant/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="ko" href="https://inkscape.org/ko/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="id" href="https://inkscape.org/id/content/uploads/2020/08/inkscape-logo.png/">
+      <link rel="alternate" hreflang="x-default" href="https://inkscape.org/en/content/uploads/2020/08/inkscape-logo.png/" />
+
+    <link rel="alternate"   type="application/rss+xml" title="News Feed" href="/news/feed/"/>
+    
+
+    
+      <script type="text/javascript" src="https://media.inkscape.org/static/admin/js/vendor/jquery/jquery.min.js"></script>
+      <script type="text/javascript" src="https://media.inkscape.org/static/js/js.cookie.js"></script>
+      <script type="text/javascript" src="https://media.inkscape.org/static/js/inkscape.js"></script>
+    
+
+    <!-- Sekizai blocks are deprecated, when django-cms stops using them, remove -->
+    
+
+
+
+    
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="https://media.inkscape.org/static/css/mobile-device.css"
+      media="only screen and (max-width: 959px)"/>
+
+    
+    <meta name="author" content="Inkscape Website Developers" />
+    <meta name="description" content="" />
+    <meta name="revised" content="" />
+    <meta name="keywords" content="inkscape,vector,drawing,graphics,svg,xml,document,poster,linux,open source,foss,floss,free software,libre software,libre,freedom,line,shape,diagram,flowchart,graph,extension,plugin,software,download,platform,windows,win,mac,osx,ubuntu,fedora,debian,help,tutorial,chat,irc,home,homepage,professional,casual,powerful,text,web,www,w3c,standard" />
+    <meta property="og:image" content="https://media.inkscape.org/static/images/inkscape-og-image.png" />
+    
+  </head>
+<body id="page-" class="">
+  
+
+  <a aria-hidden="true" tabindex="-1" style="display: none;" href="/P3W-451/2025-11-22T00:08:34.445135+00:00" style="top: -100px;position: fixed;">I am a bot</a>
+  <div class="header">
+    <div id="cleartop">
+      <div id="logo">
+        
+          <a href="//"><img src="https://media.inkscape.org/static/images/inkscape-logo.svg"
+             width="64" height="64" alt="Inkscape"/></a>
+          <h1><a href="//" tabindex="-1">Inkscape</a></h1>
+          <h2><a href="//" tabindex="-1">Draw Freely.</a></h2>
+        
+      </div>
+      <div id="header-right">
+        <ul id="tabs">
+          
+  <li id="tab_hackfest" class="link" title="Donate to the Inkscape fund, or become a sponsor!">
+    <p><a href="https://inkscape.org/support-us/donate/">❤️ Help us make Inkscape awesome! ❤️</a></p>
+  </li>
+
+
+
+          
+
+<li id="tab_languages" class="dropdown">
+  
+  <p title="English">English</p>
+  <div>
+    
+      
+      <p><a class="selected" href="/en/en/content/uploads/2020/08/inkscape-logo.png/">English</a></p>
+      
+    
+      
+      <p><a class="" href="/de/content/uploads/2020/08/inkscape-logo.png/">Deutsch</a></p>
+      
+    
+      
+      <p><a class="" href="/fr/content/uploads/2020/08/inkscape-logo.png/">Français</a></p>
+      
+    
+      
+      <p><a class="" href="/hr/content/uploads/2020/08/inkscape-logo.png/">Hrvatski</a></p>
+      
+    
+      
+      <p><a class="" href="/it/content/uploads/2020/08/inkscape-logo.png/">Italiano</a></p>
+      
+    
+      
+      <p><a class="" href="/es/content/uploads/2020/08/inkscape-logo.png/">Español</a></p>
+      
+    
+      
+      <p><a class="" href="/pt/content/uploads/2020/08/inkscape-logo.png/">Português</a></p>
+      
+    
+      
+      <p><a class="" href="/pt-br/content/uploads/2020/08/inkscape-logo.png/">Português Brasileiro</a></p>
+      
+    
+      
+      <p><a class="" href="/cs/content/uploads/2020/08/inkscape-logo.png/">česky</a></p>
+      
+    
+      
+      <p><a class="" href="/ru/content/uploads/2020/08/inkscape-logo.png/">Русский</a></p>
+      
+    
+      
+      <p><a class="" href="/ar/content/uploads/2020/08/inkscape-logo.png/">العربيّة</a></p>
+      
+    
+      
+      <p><a class="" href="/ja/content/uploads/2020/08/inkscape-logo.png/">日本語</a></p>
+      
+    
+      
+      <p><a class="" href="/zh-hans/content/uploads/2020/08/inkscape-logo.png/">简体中文</a></p>
+      
+    
+      
+      <p><a class="" href="/zh-hant/content/uploads/2020/08/inkscape-logo.png/">繁體中文</a></p>
+      
+    
+      
+      <p><a class="" href="/ko/content/uploads/2020/08/inkscape-logo.png/">한국어</a></p>
+      
+    
+      
+      <p><a class="" href="/id/content/uploads/2020/08/inkscape-logo.png/">Indonesia</a></p>
+      
+    
+  </div>
+</li>
+
+
+          
+            <li id="tab_login">
+              <p><a href="/user/login/?next=/wp-content/uploads/2020/08/inkscape-logo.png/">Log in</a></p>
+            </li>
+            <li id="tab_register">
+              <p><a href="/user/register/">Register</a></p>
+            </li>
+          
+        </ul>
+        
+        <form id="topsearch" method="get" action="/search/">
+          <input type="text" name="q" id="q" placeholder="Search website">
+          <button><img src="https://media.inkscape.org/static/images/search.svg" alt="Search"/></button>
+        </form>
+        
+      </div>
+    </div>
+    
+      <div class="nav">
+        <button id="menu-toggle"><div></div><div></div><div></div></button>
+            <ul id="menu">
+      
+        <li id="menu_47" class=" withtext">
+            <a href="/about/" title="">
+                  
+                
+                    About
+                
+            </a>
+            
+                <ul>
+                
+                  <li  class=" withtext">
+                    <a href="/about/privacy/">
+                        
+                        
+                            Privacy Policy
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/about/overview/">
+                        
+                        
+                            Overview
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/about/features/">
+                        
+                        
+                            Features
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/about/screenshots/">
+                        
+                        
+                            Screenshots
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/*leadership-committee/">
+                        
+                        
+                            Governance
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/about/license/">
+                        
+                        
+                            Licensing
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/about/branding/">
+                        
+                        
+                            Branding
+                            
+                        
+                    </a>
+                  </li>
+                
+                </ul>
+            
+        </li>
+      
+        <li id="menu_54" class=" withtext">
+            <a  title="">
+                  
+                
+                    Download
+                
+            </a>
+            
+                <ul>
+                
+                  <li  class=" withtext">
+                    <a href="/release/">
+                        
+                        
+                            Current Stable Version
+                            
+                                <span class="info">1.4.2</span>
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/release/inkscape-master/?latest=1">
+                        
+                        
+                            Unstable development snapshot
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/gallery/=extension/">
+                        
+                        
+                            Extensions
+                            
+                        
+                    </a>
+                  </li>
+                
+                </ul>
+            
+        </li>
+      
+        <li id="menu_56" class=" withtext">
+            <a href="/news/" title="">
+                  
+                
+                    News
+                
+            </a>
+            
+                <ul>
+                
+                  <li  class=" withtext">
+                    <a href="/cals/">
+                        
+                        
+                            Calendars
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/*membership/blog/">
+                        
+                        
+                            Contributor Blog
+                            
+                        
+                    </a>
+                  </li>
+                
+                </ul>
+            
+        </li>
+      
+        <li id="menu_57" class=" withtext">
+            <a href="/community/" title="">
+                  
+                
+                    Community
+                
+            </a>
+            
+                <ul>
+                
+                  <li  class=" withtext">
+                    <a href="/community/coc/">
+                        
+                        
+                            Code of Conduct
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/forums/">
+                        
+                        
+                            Forums
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="https://chat.inkscape.org/channel/inkscape_user">
+                        
+                        
+                            Chat
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="https://lists.inkscape.org/postorius/lists/?all-lists">
+                        
+                        
+                            Mailing Lists
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/gallery/">
+                        
+                        
+                            Gallery
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/user/teams/">
+                        
+                        
+                            Teams
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/community/about-screen-contests/">
+                        
+                        
+                            About Screen Contest
+                            
+                        
+                    </a>
+                  </li>
+                
+                </ul>
+            
+        </li>
+      
+        <li id="menu_65" class=" withtext">
+            <a href="/learn/" title="">
+                  
+                
+                    Learn
+                
+            </a>
+            
+                <ul>
+                
+                  <li  class=" withtext">
+                    <a href="/learn/faq/">
+                        
+                        
+                            FAQ
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/learn/books/">
+                        
+                        
+                            Books and Manuals
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/learn/tutorials/">
+                        
+                        
+                            Tutorials
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/learn/animation/">
+                        
+                        
+                            Animation
+                            
+                        
+                    </a>
+                  </li>
+                
+                </ul>
+            
+        </li>
+      
+        <li id="menu_71" class=" withtext">
+            <a href="/contribute/" title="">
+                  
+                
+                    Contribute
+                
+            </a>
+            
+                <ul>
+                
+                  <li  class=" withtext">
+                    <a href="/contribute/testing/">
+                        
+                        
+                            Testing
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/contribute/report-bugs/">
+                        
+                        
+                            Report Bugs
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/contribute/translations/">
+                        
+                        
+                            Translations
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/contribute/to-do-list/">
+                        
+                        
+                            Community To-Do List
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/contribute/promote/">
+                        
+                        
+                            Promote
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/contribute/contributors/">
+                        
+                        
+                            Contributor Stats
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="https://inkscape.gitlab.io/extensions/documentation/">
+                        
+                        
+                            Extensions
+                            
+                        
+                    </a>
+                  </li>
+                
+                </ul>
+            
+        </li>
+      
+        <li id="menu_78" class=" withtext">
+            <a href="/develop/" title="">
+                  
+                
+                    Develop
+                
+            </a>
+            
+                <ul>
+                
+                  <li  class=" withtext">
+                    <a href="/develop/getting-started/">
+                        
+                        
+                            Getting Started
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/develop/about-svg/">
+                        
+                        
+                            About SVG
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/develop/coding-style/">
+                        
+                        
+                            Coding Style
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/develop/bug-management/">
+                        
+                        
+                            Bug Management
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/develop/inkscape-git/">
+                        
+                        
+                            Inkscape&#x27;s Repositories
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/develop/debugging/">
+                        
+                        
+                            Debugging
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/develop/extensions/">
+                        
+                        
+                            Extensions
+                            
+                        
+                    </a>
+                  </li>
+                
+                </ul>
+            
+        </li>
+      
+        <li id="menu_87" class=" withtext">
+            <a href="/support-us/" title="">
+                  
+                
+                    Support Us
+                
+            </a>
+            
+                <ul>
+                
+                  <li  class=" withtext">
+                    <a href="/support-us/donate/">
+                        
+                        
+                            Donate
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/support-us/hackfests/">
+                        
+                        
+                            Contributor Meetings
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/support-us/svg-standards-work/">
+                        
+                        
+                            SVG Standards Work
+                            
+                        
+                    </a>
+                  </li>
+                
+                  <li  class=" withtext">
+                    <a href="/support-us/sponsors/">
+                        
+                        
+                            Sponsors
+                            
+                        
+                    </a>
+                  </li>
+                
+                </ul>
+            
+        </li>
+      
+    </ul>
+
+      </div>
+    
+    
+  </div>
+
+  
+    
+    <div id="content">
+      <div class="wrapper">
+        
+            <div class="breadcrumbs">
+    
+  </div>
+
+        
+        
+  <div class="errtext">
+    
+  </div>
+
+        
+
+      </div>
+    </div>
+  
+
+  
+    <div class="footer">
+      <div class="nav">
+            <ul id="social">
+      
+    </ul>
+
+        
+        <ul>
+          
+        </ul>
+        
+      </div>
+      <p>
+        
+          Inkscape is Free and Open Source Software licensed under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPL</a>.
+        
+      </p>
+    </div>
+  
+
+  
+    <p id="final-footer">
+      <span>With thanks to:</span>
+      
+    <a href="http://www.fastly.com/" title="Data Cached by Fastly" rel="nofollow">Fastly</a>
+
+    <a href="https://osuosl.org/" title="Site Hosted by OSUOSL" rel="nofollow">OSUOSL</a>
+
+    <a href="/support-us/sponsors/" title="All of our Sponsors" rel="nofollow">Sponsors</a>
+
+
+      <a href="/credits/" title="The Authors">The Authors</a>
+      <a id="dev-stamp" href="https://gitlab.com/inkscape/inkscape-web"><img src="https://media.inkscape.org/static/images/django.svg" title="This site is running:
+Python 3.13.5
+Django 5.0.11
+App: cms.details (form: str)
+InkscapeWeb 1.6, as of Mon Dec 9 16:25:34 2024 (5226da7)" alt="PY"/></a>
+    </p>
+  
+
+
+</body>
+</html>
