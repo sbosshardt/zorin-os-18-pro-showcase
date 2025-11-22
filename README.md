@@ -1,6 +1,8 @@
 # Zorin OS 18 Pro Software Showcase
 
-**⚠️ DISCLAIMER: This is an unofficial project with no affiliation or relationship with Zorin Ltd. or the Zorin OS development team. This showcase was created independently for informational purposes only.**
+**⚠️ DISCLAIMER: This is an unofficial project with no affiliation or relationship with Zorin Ltd., the Zorin OS development team, or any of the showcased software projects. This showcase was created independently for informational purposes only.**
+
+**Image Usage Notice: Image files (logos and screenshots) were collected from the web and their inclusion here is believed to be fair use. This project does not grant any licenses or permissions for the use of these images. Users should obtain proper licensing directly from the respective copyright holders if they wish to use these images for any purpose.**
 
 A web-based gallery showcasing the software applications that come preinstalled with Zorin OS 18 Pro (but not with Zorin OS 18 Core).
 
